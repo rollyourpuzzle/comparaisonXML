@@ -10,6 +10,7 @@ import org.custommonkey.xmlunit.Difference;
 public class ComparaisonXML {
 
 	public static StringBuffer comparaison(String pFile1, String pFile2)
+
 			throws Exception {
 		FileReader fr1 = null;
 		int countofdifferences = 0;
@@ -28,7 +29,7 @@ public class ComparaisonXML {
 
 		@SuppressWarnings("unchecked")
 		List<Difference> differences = detDiff.getAllDifferences();
-		
+
 		StringBuffer lResultat = new StringBuffer();
 
 		for (Object object : differences) {
