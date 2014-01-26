@@ -79,7 +79,7 @@ public class FileChoice extends JFrame implements ActionListener {
 			
 				StringBuffer lResultats;
 				try {
-					lResultats = ComparaisonXML.comparaison(lFieldFile1.getText(), lFieldFile2.getText());
+				lResultats = ComparaisonXML.comparaison(lFieldFile1.getText(), lFieldFile2.getText());
 				
 				JFrame lJframe = new JFrame();
 				JEditorPane lJEditorPane = new JEditorPane();
@@ -89,7 +89,6 @@ public class FileChoice extends JFrame implements ActionListener {
 				lJframe.setLocationRelativeTo(null);
 				lJframe.setVisible(true);
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 	
