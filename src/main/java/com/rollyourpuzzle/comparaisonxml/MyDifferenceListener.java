@@ -11,7 +11,11 @@ public class MyDifferenceListener implements DifferenceListener {
 
 
 	public int differenceFound(Difference pDifference) {
+		
+		int lRetour = RETURN_ACCEPT_DIFFERENCE;
+		
 		boolean lNotAnDifference = false;
+		
 		lNotAnDifference = pDifference.getId() == DifferenceConstants.ATTR_VALUE_ID
 				&& pDifference.getControlNodeDetail().getXpathLocation()
 						.contains("/Instances[1]/Head[1]/Key[1]/meta")
@@ -21,7 +25,6 @@ public class MyDifferenceListener implements DifferenceListener {
 						.matches(
 								"[0-z]{8}[-]{1}[0-z]{4}[-]{1}[0-z]{4}[-]{1}[0-z]{4}[-]{1}[0-z]{12}",
 								pDifference.getControlNodeDetail().getValue());
-		int lRetour = 0;
 				
 		if (lNotAnDifference) {
 			lRetour = RETURN_IGNORE_DIFFERENCE_NODES_IDENTICAL;
