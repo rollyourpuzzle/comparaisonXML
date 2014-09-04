@@ -1,4 +1,4 @@
-package com.rollyourpuzzle.comparaisonxml;
+package com.cgi.comparaisonxml;
 
 import java.awt.Toolkit;
 import java.awt.datatransfer.DataFlavor;

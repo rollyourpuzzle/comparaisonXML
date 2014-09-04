@@ -1,4 +1,4 @@
-package com.rollyourpuzzle.comparaisonxml;
+package com.cgi.comparaisonxml;
 
 import java.io.FileReader;
 import java.util.List;

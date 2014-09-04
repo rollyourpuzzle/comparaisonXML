@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.rollyourpuzzle.comparaisonxml.fenetres;
+package com.cgi.comparaisonxml.fenetres;
 
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -13,8 +13,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import com.rollyourpuzzle.comparaisonxml.ComparaisonXML;
-import com.rollyourpuzzle.comparaisonxml.MyTransferHandler;
+import com.cgi.comparaisonxml.ComparaisonXML;
+import com.cgi.comparaisonxml.MyTransferHandler;
 
 /**
  * @author gruatlaformea

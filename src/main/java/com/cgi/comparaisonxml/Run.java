@@ -1,6 +1,6 @@
-package com.rollyourpuzzle.comparaisonxml;
+package com.cgi.comparaisonxml;
 
-import com.rollyourpuzzle.comparaisonxml.fenetres.FileChoice;
+import com.cgi.comparaisonxml.fenetres.FileChoice;
 
 public class Run {
 

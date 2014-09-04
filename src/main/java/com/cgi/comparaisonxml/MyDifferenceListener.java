@@ -1,4 +1,4 @@
-package com.rollyourpuzzle.comparaisonxml;
+package com.cgi.comparaisonxml;
 
 import java.util.regex.Pattern;
 
@@ -17,14 +17,15 @@ public class MyDifferenceListener implements DifferenceListener {
 		boolean lNotAnDifference = false;
 		
 		lNotAnDifference = pDifference.getId() == DifferenceConstants.ATTR_VALUE_ID
-				&& pDifference.getControlNodeDetail().getXpathLocation()
+				&& (pDifference.getControlNodeDetail().getXpathLocation()
 						.contains("/Instances[1]/Head[1]/Key[1]/meta")
 				&& pDifference.getControlNodeDetail().getXpathLocation()
 						.contains("name")
 				&& Pattern
 						.matches(
 								"[0-z]{8}[-]{1}[0-z]{4}[-]{1}[0-z]{4}[-]{1}[0-z]{4}[-]{1}[0-z]{12}",
-								pDifference.getControlNodeDetail().getValue());
+								pDifference.getControlNodeDetail().getValue()) || pDifference.getControlNodeDetail().getXpathLocation()
+								.contains("/Instances[1]/@date"));
 				
 		if (lNotAnDifference) {
 			lRetour = RETURN_IGNORE_DIFFERENCE_NODES_IDENTICAL;
